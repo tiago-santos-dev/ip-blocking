@@ -1,15 +1,9 @@
+import fetchAPI from '@lib/fetch-api'
+import {
+  Button, Code, Input, Layout, Link, Page, Text
+} from '@vercel/examples-ui'
 import { useState } from 'react'
 import useSWR from 'swr'
-import {
-  Layout,
-  Page,
-  Button,
-  Input,
-  Text,
-  Link,
-  Code,
-} from '@vercel/examples-ui'
-import fetchAPI from '@lib/fetch-api'
 
 function Index() {
   const [loading, setLoading] = useState<boolean>(false)
